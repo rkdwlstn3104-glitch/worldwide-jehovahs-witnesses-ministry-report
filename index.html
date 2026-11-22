@@ -105,9 +105,16 @@
       position: relative;
       z-index: 10;
       width: 100%;
-      height: calc(100vh - 116px);
-      height: calc(100dvh - 116px);
+      height: calc(100vh - 160px);
+      height: calc(100dvh - 160px);
       overflow: hidden;
+    }
+
+    @media (min-width: 640px) {
+      .slides-viewport {
+        height: calc(100vh - 116px);
+        height: calc(100dvh - 116px);
+      }
     }
 
     .slide {
@@ -657,7 +664,7 @@
   </main>
 
   <!-- Bottom Navigation Bar -->
-  <footer class="relative z-20 h-14 px-4 sm:px-8 flex items-center justify-between border-t border-slate-800/80 bg-slate-950/70 backdrop-blur-md">
+  <footer class="relative z-20 pt-2.5 pb-12 sm:py-0 sm:h-14 px-4 sm:pl-8 sm:pr-52 flex items-center justify-between gap-2 border-t border-slate-800/80 bg-slate-950/70 backdrop-blur-md">
     <button id="btn-prev" type="button" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/90 text-slate-200 hover:bg-slate-700 disabled:opacity-35 disabled:cursor-not-allowed transition-colors">
       <i data-lucide="chevron-left" class="w-4 h-4"></i>
       <span>이전</span>
